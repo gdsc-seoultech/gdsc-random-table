@@ -28,12 +28,40 @@ body {
 }
 
 table {
-  margin: 50px auto 0px auto;
+  margin: 0px auto;
+  border-collapse: collapse;
 }
 
-.wrapper {
+tr {
+  display: block;
+}
+
+tbody {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.member-group td {
+  border: 0.5px solid black;
+}
+
+td {
+  padding: 5px;
+}
+
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.second-wrapper {
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #4386f4;
 }
 
 .img-wrapper {
@@ -62,17 +90,22 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border-radius: 20px;
-  border: 1px solid black;
+  background-color: none;
   padding: 5px 0px;
-  width: 200px;
+  width: 300px;
   height: 50px;
+  border: none;
+  font-weight: 700;
+  font-size: 26px;
 }
 
+.next-step-button:hover {
+  background-color: #4386f4;
+  border-radius: 20px;
+}
+
+
 .shuffle-button {
-  all: unset;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +115,10 @@ table {
   padding: 5px 0px;
   width: 150px;
   margin: 32px auto 0px auto;
-  
+}
+
+.shuffle-button span {
+  font-size: 24px;
 }
 
 .step-2-p {
@@ -90,6 +126,74 @@ table {
   width: 100%;
   text-align: center;
   margin: 20px auto 0px auto;
-  font-size: 24px;
+}
+
+.step-2-p span {
+  font-size: 50px;
   font-weight: 500;
+  color: white;
+}
+
+.lottie {
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+@keyframes anime_textup { 0% { top: 0; } 20% { top: -0.5rem; } 40% { top: 0 } 60% { top: 0 } 80% { top: 0 } 100% { top: 0 } }
+ 
+.step-2-p span {
+    position: relative;
+    animation: anime_textup 1.5s infinite;
+}
+
+.step-2-p span:nth-of-type(1) {
+    animation-delay: .1s;
+}
+
+.step-2-p span:nth-of-type(2) {
+    animation-delay: .2s;
+}
+
+.step-2-p span:nth-of-type(3) {
+    animation-delay: .3s;
+}
+
+.step-2-p span:nth-of-type(4) {
+    animation-delay: .4s;
+}
+
+.step-2-p span:nth-of-type(5) {
+    animation-delay: .5s;
+}
+.step-2-p span:nth-of-type(6) {
+  animation-delay: .6s;
+}
+.step-2-p span:nth-of-type(7) {
+  animation-delay: .7s;
+}
+.step-2-p span:nth-of-type(8) {
+  animation-delay: .8s;
+}
+.step-2-p span:nth-of-type(9) {
+  animation-delay: .9s;
+}
+.step-2-p span:nth-of-type(10) {
+  animation-delay: 1.0s;
+}
+.step-2-p span:nth-of-type(11) {
+  animation-delay: 1.1s;
+}
+.step-2-p span:nth-of-type(12) {
+  animation-delay: 1.2s;
+}
+.step-2-p span:nth-of-type(13) {
+  animation-delay: 1.3s;
+}
+.step-2-p span:nth-of-type(14) {
+  animation-delay: 1.4s;
+}
+.step-2-p span:nth-of-type(15) {
+  animation-delay: 1.5s;
 }
